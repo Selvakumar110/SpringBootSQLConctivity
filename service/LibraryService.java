@@ -12,7 +12,6 @@ import com.library.model.Library;
 
 
 
-@Service
 public class LibraryService {
 
 	
