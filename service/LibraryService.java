@@ -12,6 +12,7 @@ import com.library.model.Library;
 
 
 
+@Service
 public class LibraryService {
 
 	
@@ -23,10 +24,7 @@ public class LibraryService {
 	public Library create(Library library) {
 		return librarydao.create(library);
 	}
-	public List<Library> getall(Integer pageNo,Integer pageSize){
-		logger.info("Logger from service pagination");
-		return librarydao.getall(pageNo, pageSize);
-	}
+	
 	public List<Library>getAll(){
 		logger.info("hey logger from getall service");
 		return librarydao.getAll();		
