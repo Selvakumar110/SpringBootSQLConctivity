@@ -20,17 +20,8 @@ public class LibraryDao {
 	LibraryRepository repository;
 
 	public Library create(Library library) {
-		Library result = null;
-
-		try {
-			result = repository.save(library);
-
-		} catch (Exception e) {
-			throw e;
-
-		}
-		return result;
-
+		repository.save(library);
+		return library;
 	}
 
 
